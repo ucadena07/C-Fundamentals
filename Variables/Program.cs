@@ -17,8 +17,11 @@ float height = 180.12F; // Occupies 4 bites; precision of 6 to 9 digits
 double width = 4.12; // Occupies 8 bites; precision of 15 to 17 digits
 decimal amount = 9.99m; // Occupies 16 bites; precision of 28 to 29 digits
 
+//booleans
 bool valid = true;
 
+
+//strings
 char letter = 'A';
 string letters = "abcde";
 
@@ -39,4 +42,25 @@ string myFirstRSL = $"""
                     Hello, "nice" to meet 'you', I am Ulises - {height},
                     I like to program.
                     """;
-Console.WriteLine(myFirstRSL);
+
+
+//datetime
+DateTime now  = DateTime.Now;
+DateTime firstDayOfTheYear = new DateTime(2023,1,1);
+
+DateTime tomorrow = DateTime.Now.AddDays(1);
+
+
+
+Console.WriteLine("The day is:");
+Console.WriteLine(now.Day);
+
+Console.WriteLine("The day of the week is:");
+Console.WriteLine(now.DayOfWeek);
+
+Console.WriteLine("The day of the year is:");
+Console.WriteLine(now.DayOfYear);
+
+var august15 = new DateTime(2023, 8, 15);
+Console.WriteLine("The day of the year of august 15 is:");
+Console.WriteLine(august15.DayOfYear);
