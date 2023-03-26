@@ -10,3 +10,7 @@ ushort ushort1 = 60_000; // 0 to 65,535 (2 bytes of memory)
 
 long long1 = 300_147_483_647; // (8 bytes of memory)
 ulong ulong1 = 545_300_147_483_647; // (8 bytes of memory)
+
+float height = 180.12F; // Occupies 4 bites; precision of 6 to 9 digits
+double width = 4.12; // Occupies 8 bites; precision of 15 to 17 digits
+decimal amount = 9.99m; // Occupies 16 bites; precision of 28 to 29 digits
