@@ -16,6 +16,8 @@ ulong ulong1 = 545_300_147_483_647; // (8 bytes of memory)
 float height = 180.12F; // Occupies 4 bites; precision of 6 to 9 digits
 double width = 4.12; // Occupies 8 bites; precision of 15 to 17 digits
 decimal amount = 9.99m; // Occupies 16 bites; precision of 28 to 29 digits
+// m - decimal
+// f - float 
 
 //booleans
 bool valid = true;
@@ -52,15 +54,56 @@ DateTime tomorrow = DateTime.Now.AddDays(1);
 
 
 
-Console.WriteLine("The day is:");
-Console.WriteLine(now.Day);
+//Console.WriteLine("The day is:");
+//Console.WriteLine(now.Day);
 
-Console.WriteLine("The day of the week is:");
-Console.WriteLine(now.DayOfWeek);
+//Console.WriteLine("The day of the week is:");
+//Console.WriteLine(now.DayOfWeek);
 
-Console.WriteLine("The day of the year is:");
-Console.WriteLine(now.DayOfYear);
+//Console.WriteLine("The day of the year is:");
+//Console.WriteLine(now.DayOfYear);
 
 var august15 = new DateTime(2023, 8, 15);
-Console.WriteLine("The day of the year of august 15 is:");
-Console.WriteLine(august15.DayOfYear);
+//Console.WriteLine("The day of the year of august 15 is:");
+//Console.WriteLine(august15.DayOfYear);
+
+//variables implicict types
+int ulisesAge = 34; //camel case
+int ulises_age = 34; //snake case
+
+
+var number = 1;
+var lastName = "Meyer";
+var yesterday = DateTime.Today.AddDays(-1);
+
+
+int? value = null;
+//Console.WriteLine(value);
+
+//Console.WriteLine("Default value of a string");
+//Console.WriteLine(default(string));
+
+
+string firstName = null;
+Console.WriteLine(firstName?.ToUpper());
+
+//Binary expressions
+var num1 = 1;
+var num2 = 2;   
+var sum = num1 + num2;
+
+var fName = "Ulises";
+var lName = "Cadena";
+
+var fullName = fName + " " + lName;
+//Console.WriteLine(fullName);
+
+checked
+{
+    var maximun = int.MaxValue;
+    var sum2 = maximun + 1;
+    Console.WriteLine(sum2);
+}
+
+
+
