@@ -1,0 +1,15 @@
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\bin\Debug\net7.0\Decisions_and_Loops.exe
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\bin\Debug\net7.0\Decisions_and_Loops.deps.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\bin\Debug\net7.0\Decisions_and_Loops.runtimeconfig.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\bin\Debug\net7.0\Decisions_and_Loops.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\bin\Debug\net7.0\Decisions_and_Loops.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.csproj.AssemblyReference.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\refint\Decisions_and_Loops.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\Decisions_and_Loops.genruntimeconfig.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Decisions_and_Loops\obj\Debug\net7.0\ref\Decisions_and_Loops.dll
