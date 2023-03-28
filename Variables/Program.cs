@@ -96,14 +96,19 @@ var fName = "Ulises";
 var lName = "Cadena";
 
 var fullName = fName + " " + lName;
+var fullName2 = $"{fName} {lName}";
 //Console.WriteLine(fullName);
 
 checked
 {
     var maximun = int.MaxValue;
-    var sum2 = maximun + 1;
-    Console.WriteLine(sum2);
+    //var sum2 = maximun + 1;
+    //Console.WriteLine(sum2);
 }
+
+var num10 = 10;
+var num10MultipleByMinus1 = -num10;
+Console.WriteLine(num10MultipleByMinus1);
 
 
 
