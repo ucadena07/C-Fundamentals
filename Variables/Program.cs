@@ -106,9 +106,37 @@ checked
     //Console.WriteLine(sum2);
 }
 
+//unary expressions
 var num10 = 10;
-var num10MultipleByMinus1 = -num10;
+var num10MultipleByMinus1 = -num10; // (-1) * num10
+
+
+num10++;
+num10--;
 Console.WriteLine(num10MultipleByMinus1);
 
+//void expressions
+Console.WriteLine("I do not return anything and cant be assigned to anything");
 
+//assignment operator
+var sum40 = num1 + num2;
+num1 += num2; // num1 = num1 + num2;
+num1 -= num2;
+num1 *= num2;
+num1 /= num2;
+num1 %= num2;
+
+firstName += lastName;
+
+
+var num11 = 11;
+var num12 = 12;
+var num13 = 13;
+//order of precedence
+
+var num14 = num11 + num12 * num13;
+var num15 = (num11 + num12) * num13;
+
+//constants
+const int myConstant = 7;
 
