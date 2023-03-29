@@ -66,4 +66,37 @@ var msg = place switch
     4 or 5 => "you almost got it",
     _ => "none of the above"
 };
-Console.WriteLine(msg);
+
+var temp = 36;
+
+var tmpMsg = temp switch
+{
+    37 => "Healthy",
+    > 37 => "FEVER",
+    < 35 => "LOW",
+    _ => ""
+};
+
+//logical patterns
+lastName = "meyer";
+if(lastName is not null)
+{
+    //do something
+}
+
+tmpMsg = temp switch
+{
+    37 => "Healthy",
+    > 37 and < 39 => "FEVER",
+    >= 39 and < 43 => "DOCTOR",
+    _ => ""
+};
+
+var season = DateTime.Today.Month switch
+{
+    3 or 4 or 5 => "Spring",
+    6 or 7 or 8 => "Summer",
+    9 or 10 or 11 => "Fall",
+    12 or 1 or 2 => "Winter",
+    _ => ""
+};
