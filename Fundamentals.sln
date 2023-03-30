@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Vari
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decisions_and_Loops", "Decisions_and_Loops\Decisions_and_Loops.csproj", "{330A871E-8586-4319-BC5C-8EC095904FE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreAboutDataTypes", "MoreAboutDataTypes\MoreAboutDataTypes.csproj", "{34F0A5FB-1C87-4183-B258-F508628201E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{330A871E-8586-4319-BC5C-8EC095904FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{330A871E-8586-4319-BC5C-8EC095904FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{330A871E-8586-4319-BC5C-8EC095904FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F0A5FB-1C87-4183-B258-F508628201E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F0A5FB-1C87-4183-B258-F508628201E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F0A5FB-1C87-4183-B258-F508628201E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F0A5FB-1C87-4183-B258-F508628201E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
