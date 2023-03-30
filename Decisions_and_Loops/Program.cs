@@ -10,8 +10,8 @@ var num1 = 5;
 var num2 = 6;
 
 //greater than
-var isNum1EqualToNum2 = num1 ==  num2;
-var isNumGreaterThanNum2 = num1 >  num2;
+var isNum1EqualToNum2 = num1 == num2;
+var isNumGreaterThanNum2 = num1 > num2;
 
 
 //coditional boolean operators
@@ -44,7 +44,7 @@ string message = userLoggedIn ? "Welcome back" : "Login to start";
 var place = 2;
 switch (place)
 {
-	case 1:
+    case 1:
         Console.WriteLine("place is equal to 1");
         break;
     case 2:
@@ -54,7 +54,7 @@ switch (place)
         Console.WriteLine("place is equal to 3");
         break;
     default:
-		break;
+        break;
 }
 
 //switch expressions
@@ -79,7 +79,7 @@ var tmpMsg = temp switch
 
 //logical patterns
 lastName = "meyer";
-if(lastName is not null)
+if (lastName is not null)
 {
     //do something
 }
@@ -100,3 +100,95 @@ var season = DateTime.Today.Month switch
     12 or 1 or 2 => "Winter",
     _ => ""
 };
+
+//loops
+
+int counter = 11;
+while (counter <= 10)
+{
+    //Console.WriteLine(counter);
+    counter++;
+}
+
+int counter2 = 11;
+do
+{
+    //Console.WriteLine(counter2);
+    counter2++;
+} while (counter2 <= 10);
+
+for (int i = 1; i <= 10; i++)
+{
+    //Console.WriteLine(i);
+}
+
+var name = "Henry";
+foreach (var letter in name)
+{
+    //Console.WriteLine(letter);
+}
+
+//break and continue
+for (int i = 1; i <= 10; i++)
+{
+    if(i == 5)
+    {
+        break;
+    }
+    //Console.WriteLine(i);
+
+}
+
+for (int i = 1; i <= 10; i++)
+{
+    if (i == 5)
+    {
+        continue;
+    }
+    //Console.WriteLine(i);
+
+}
+
+//infite looops
+//while (true)
+//{
+//    Console.WriteLine("I run forever");
+//    if(DateTime.Now.Second == 30)
+//    {
+//        break;
+//    }
+//}
+
+//for(; ; )
+//{
+//    Console.WriteLine("I run forever");
+//    if (DateTime.Now.Second == 30)
+//    {
+//        break;
+//    }
+//}
+
+while (true)
+{
+    Console.WriteLine("Welcome to the sum calculator in C#!");
+    Console.Write("Write the first number: ");
+    var userInput = Console.ReadLine();
+
+    if(userInput == null)
+    {
+        Console.WriteLine("Error. Try again");
+        continue;
+    }
+    var num10 = int.Parse(userInput);
+
+    Console.Write("Write the second number: ");
+    userInput = Console.ReadLine();
+    if (userInput == null)
+    {
+        Console.WriteLine("Error. Try again");
+        continue;
+    }
+    var num11 = int.Parse(userInput);
+
+    Console.WriteLine($"The result of adding {num10} and {num11} is {num10 + num11}");
+}
