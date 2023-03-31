@@ -57,6 +57,10 @@ int2 = byte2;
 
 var status = SalesStatus.Successful;
 
+var s = 3;
+
+var statusEnum = (SalesStatus)s;
+var normalStatus = (int)SalesStatus.Successful;
 //ctrl R + ctrl R
 
 switch (status)
@@ -70,3 +74,24 @@ switch (status)
     default:
         break;
 }
+
+char[] vowels = new char[5];
+vowels[0] = 'a';
+vowels[1] = 'e';
+vowels[2] = 'i';
+vowels[3] = 'o';
+vowels[4] = 'u';
+
+
+//last Element
+Index lastElement = ^1;
+var lastVowel = vowels[lastElement];
+
+var last2Elemets = vowels[^2..];
+
+Range igonoredFirstAndLast = 1..^1;
+
+//ranges
+Range first2Elems = ..2;
+var first2 = vowels[first2Elems]; // 0,1
+
