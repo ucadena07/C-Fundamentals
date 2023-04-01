@@ -95,3 +95,43 @@ Range igonoredFirstAndLast = 1..^1;
 Range first2Elems = ..2;
 var first2 = vowels[first2Elems]; // 0,1
 
+//2 dimensional arrays
+int[,] matrix = new int[2, 2];
+matrix[0, 0] = 1; 
+matrix[0, 1] = 2; 
+matrix[1, 0] = 3; 
+matrix[1, 1] = 4;
+
+int[,] matrix2 = new int[,]
+{
+    { 5,6},
+    {7,8}
+};
+
+for (int row = 0; row < matrix.GetLength(0); row++)
+{
+    for (int column = 0; column < matrix.GetLength(1); column++)
+    {
+        Console.Write(matrix[row,column]);
+    }
+    Console.WriteLine();
+}
+
+//Jagged array 
+int[][] jaggedArray =
+{
+    new int[]{1,2},
+    new int[]{1,4,5},
+    new int[]{6},
+    new int[]{1,5}
+};
+
+foreach (var array in jaggedArray)
+{
+    foreach (var item in array)
+    {
+        Console.Write(item);
+        
+    }
+    Console.WriteLine(  );
+}

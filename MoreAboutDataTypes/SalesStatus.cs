@@ -8,8 +8,8 @@ namespace MoreAboutDataTypes
 {
     public enum SalesStatus
     {
-        Successful,
-        Pending,
-        Failed
+        Successful = 1,
+        Pending = 2,
+        Failed = 3
     }
 }

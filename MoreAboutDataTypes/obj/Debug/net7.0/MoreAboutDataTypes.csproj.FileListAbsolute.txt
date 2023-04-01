@@ -1,0 +1,15 @@
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\bin\Debug\net7.0\MoreAboutDataTypes.exe
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\bin\Debug\net7.0\MoreAboutDataTypes.deps.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\bin\Debug\net7.0\MoreAboutDataTypes.runtimeconfig.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\bin\Debug\net7.0\MoreAboutDataTypes.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\bin\Debug\net7.0\MoreAboutDataTypes.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.csproj.AssemblyReference.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\refint\MoreAboutDataTypes.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\MoreAboutDataTypes.genruntimeconfig.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\MoreAboutDataTypes\obj\Debug\net7.0\ref\MoreAboutDataTypes.dll
