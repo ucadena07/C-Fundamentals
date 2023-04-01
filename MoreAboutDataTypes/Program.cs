@@ -135,3 +135,20 @@ foreach (var array in jaggedArray)
     }
     Console.WriteLine(  );
 }
+
+//string manipulation
+var bird = "henry";
+
+if(bird.Equals("HENRY", StringComparison.OrdinalIgnoreCase))
+{
+    Console.WriteLine("Hi, henry");
+}
+else
+{
+    Console.WriteLine("who are you?");
+}
+
+
+//pad
+long amount = 123;
+Console.WriteLine(amount.ToString().PadLeft(10,'0'));
