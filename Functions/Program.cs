@@ -1,5 +1,6 @@
 ﻿//Simple fuction
 using System.Diagnostics;
+using System.Reflection;
 
 string GetName()
 {
@@ -208,4 +209,77 @@ void Print(string message, int times)
 
 printNTimes = Print;
 printNTimes("Alo", 5);
+Console.WriteLine("============");
 
+//Func
+//functions that return string and receives no parameters
+Func<string> returnString;
+
+string GetCurrentDate()
+{
+    return DateTime.Now.ToString("MM/dd/yyyy");
+}
+
+returnString = GetCurrentDate;  
+var res = returnString();
+Console.WriteLine(res);
+Console.WriteLine("============");
+
+void ProcessFunc(Func<string> func)
+{
+    Console.WriteLine("before exec func");
+    var v = func();
+    Console.WriteLine(v);
+    Console.WriteLine("after exec func");
+}
+
+ProcessFunc(GetCurrentDate);
+Console.WriteLine("============");
+
+//a func that receives parameters
+Func<int, string> receivesIntReturnsString;
+
+string GetNameOfMonth(int month)
+{
+    var date = new DateTime(2023,month,1);
+    return date.ToString("MMMM");
+}
+
+receivesIntReturnsString = GetNameOfMonth;
+
+var feb = receivesIntReturnsString(2);
+Console.WriteLine(feb);
+Console.WriteLine("============");
+
+//Predicate - func that returns a bool
+bool IsEven(int n)
+{
+    return n % 2 == 0;
+}
+
+Predicate<int> predicate = IsEven;
+var numero = 4;
+Console.WriteLine($"Is {numero} even? {predicate(numero)}");
+
+var numero2 = 5;
+Console.WriteLine($"Is {numero2} even? {predicate(numero2)}");
+Console.WriteLine("============");
+//Delagates - A pointer that points to a function
+
+bool TryParse2(string value, out int result)
+{
+    return int.TryParse(value, out result);
+}
+
+//this wont work
+//Func<string, int, bool> tryParseFunc = TryParse2;
+TryParseDelegate mydel = TryParse2;
+
+
+
+int value;
+if(mydel("12", out value))
+{
+    Console.WriteLine(++value);
+}
+delegate bool TryParseDelegate(string value, out int result);
