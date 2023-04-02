@@ -105,3 +105,21 @@ DoubleAndTriple(7, out doubled, out tripled);
 Console.WriteLine("============");
 Console.WriteLine(doubled);
 Console.WriteLine(tripled);
+Console.WriteLine("============");
+
+//Tuples
+(int rate,int random, string name) myTupple = (99, 45, "Nigel");
+Console.WriteLine(myTupple);
+Console.WriteLine(myTupple.name);
+
+Console.WriteLine("============");
+(int newRate, int dangerousRate) Rates(int value)
+{
+    return (value * 2, value * 3);
+}
+
+var result = Rates(10);
+Console.WriteLine(result);
+Console.WriteLine(result.newRate);
+Console.WriteLine(result.dangerousRate);
+Console.WriteLine("============");
