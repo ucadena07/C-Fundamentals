@@ -1,4 +1,6 @@
 ﻿//Simple fuction
+using System.Diagnostics;
+
 string GetName()
 {
     return "Ulises";
@@ -123,3 +125,87 @@ Console.WriteLine(result);
 Console.WriteLine(result.newRate);
 Console.WriteLine(result.dangerousRate);
 Console.WriteLine("============");
+
+//local function
+void myFunction()
+{
+    var value = 5;
+    PrintValue(value);
+    value++;
+    PrintValue(value);
+
+    void PrintValue(int value)
+    {
+        Console.WriteLine($"The value is {value}");
+    }
+}
+myFunction();
+Console.WriteLine("============");
+
+//Lambda Expressions
+int Sum(int a, int b)
+{
+    return a + b;
+}
+
+int Sum2(int a, int b) => a + b;
+
+//Actions - void functions that doesnt receive parameters
+Action printMessage;
+
+void PrintDate()
+{
+    Console.WriteLine(DateTime.Now);
+
+}
+
+
+void PrintName()
+{
+    Console.WriteLine("Henry");
+}
+
+printMessage = PrintDate;
+printMessage();
+
+printMessage = PrintName;
+printMessage();
+Console.WriteLine("============");
+
+//passing a function as parametes 
+void Process(Action action)
+{
+    Console.WriteLine("before exec");
+    action();
+    Console.WriteLine("after exec");
+}
+Process(PrintDate);
+Console.WriteLine();
+Process(PrintName);
+Console.WriteLine("============");
+
+//void function that receives a parameter
+Action<int> alterNumber;
+
+void Add1(int value)
+{
+    value++;
+    Console.WriteLine($"The value is {value}");
+}
+
+alterNumber = Add1;
+alterNumber(5);
+Console.WriteLine("============");
+//void function that receives 2 parameters
+Action<string, int> printNTimes;
+void Print(string message, int times)
+{
+    for (int i = 0; i < times; i++)
+    {
+        Console.WriteLine(message);
+    }
+}
+
+printNTimes = Print;
+printNTimes("Alo", 5);
+
