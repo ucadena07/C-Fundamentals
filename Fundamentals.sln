@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decisions_and_Loops", "Deci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreAboutDataTypes", "MoreAboutDataTypes\MoreAboutDataTypes.csproj", "{34F0A5FB-1C87-4183-B258-F508628201E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{5960DEA7-2AA5-48BA-B430-67F1CAF69813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functions", "Functions\Functions.csproj", "{5960DEA7-2AA5-48BA-B430-67F1CAF69813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesStructsAndRecords", "ClassesStructsAndRecords\ClassesStructsAndRecords.csproj", "{B485122B-3284-49AB-9938-5824DED207B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5960DEA7-2AA5-48BA-B430-67F1CAF69813}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5960DEA7-2AA5-48BA-B430-67F1CAF69813}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5960DEA7-2AA5-48BA-B430-67F1CAF69813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B485122B-3284-49AB-9938-5824DED207B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B485122B-3284-49AB-9938-5824DED207B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B485122B-3284-49AB-9938-5824DED207B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B485122B-3284-49AB-9938-5824DED207B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

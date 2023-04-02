@@ -1,0 +1,15 @@
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\bin\Debug\net7.0\ClassesStructsAndRecords.exe
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\bin\Debug\net7.0\ClassesStructsAndRecords.deps.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\bin\Debug\net7.0\ClassesStructsAndRecords.runtimeconfig.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\bin\Debug\net7.0\ClassesStructsAndRecords.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\bin\Debug\net7.0\ClassesStructsAndRecords.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.csproj.AssemblyReference.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\refint\ClassesStructsAndRecords.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ClassesStructsAndRecords.genruntimeconfig.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\ClassesStructsAndRecords\obj\Debug\net7.0\ref\ClassesStructsAndRecords.dll
