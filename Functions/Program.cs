@@ -282,4 +282,28 @@ if(mydel("12", out value))
 {
     Console.WriteLine(++value);
 }
+Console.WriteLine("============");
+
+//Anonymous functions
+Action printMsg = () =>
+{
+    Console.WriteLine("message");
+};
+
+//Anonymous functions as a parameter
+Process(() =>
+{
+    Console.WriteLine("Doing stuff");
+});
+
+Func<int, int> doubleNum = (int a) => 2 * a;
+
+Func<bool, string, int> example = (bool1, string1) =>
+{
+    return 42;
+};
+
+
+
+
 delegate bool TryParseDelegate(string value, out int result);
