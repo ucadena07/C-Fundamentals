@@ -1,0 +1,15 @@
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\bin\Debug\net7.0\Functions.exe
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\bin\Debug\net7.0\Functions.deps.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\bin\Debug\net7.0\Functions.runtimeconfig.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\bin\Debug\net7.0\Functions.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\bin\Debug\net7.0\Functions.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.csproj.AssemblyReference.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\refint\Functions.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\Functions.genruntimeconfig.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Functions\obj\Debug\net7.0\ref\Functions.dll
