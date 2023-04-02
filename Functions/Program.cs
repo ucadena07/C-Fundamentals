@@ -78,3 +78,30 @@ PrintArray(oArray);
 DoubleArray(oArray);
 Console.WriteLine("===============");
 PrintArray(oArray);
+
+//out parameter
+int numberToDouble = 5;
+int doubleNumber;
+
+void DoubleOut(int n, out int doubled)
+{
+    doubled = n * 2;    
+}
+
+DoubleOut(numberToDouble, out doubleNumber);
+
+Console.WriteLine($"original number: {numberToDouble}");
+Console.WriteLine($"modified number: {doubleNumber}");
+
+//returning several values 
+void DoubleAndTriple(int number, out int  doubledNumber, out int tripleNumber)
+{
+    doubledNumber = number * 2;
+    tripleNumber = number * 3;
+}
+
+int doubled, tripled;
+DoubleAndTriple(7, out doubled, out tripled);
+Console.WriteLine("============");
+Console.WriteLine(doubled);
+Console.WriteLine(tripled);
