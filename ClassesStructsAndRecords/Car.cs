@@ -8,6 +8,7 @@ namespace ClassesStructsAndRecords
 {
     public class Car
     {
+        //Properties
         string _brand;
         int _year;
 
@@ -18,7 +19,19 @@ namespace ClassesStructsAndRecords
         }
 
         internal int Year {get; set;}
-        internal int Speed { get; } = 20;
+        internal int Speed { get; private set; } = 20;
         internal string CommercialName => $"{Brand} {Year}";
+
+        //Functions and methods
+        internal void Accelerate()
+        {
+            if(Speed >= 120)
+            {
+                Console.WriteLine("Max speed reached");
+                return;
+            }
+            Speed = Speed + 50;
+        }
+
     }
 }
