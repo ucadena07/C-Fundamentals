@@ -1,7 +1,8 @@
 ﻿using ClassesStructsAndRecords;
 
 Car car1 = new Car();
-car1._brand = "Audi";
-car1._year = 2017;
+car1.Brand = "Audi";
+car1.Year = 2017;
 
-Console.WriteLine(car1._brand);
+Console.WriteLine(car1.CommercialName);
+

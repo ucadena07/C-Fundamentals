@@ -8,7 +8,17 @@ namespace ClassesStructsAndRecords
 {
     public class Car
     {
-        public string _brand;
-        public int _year;
+        string _brand;
+        int _year;
+
+        internal string Brand
+        {
+            get { return _brand?.ToUpper(); }
+            set { _brand = value; }
+        }
+
+        internal int Year {get; set;}
+        internal int Speed { get; } = 20;
+        internal string CommercialName => $"{Brand} {Year}";
     }
 }
