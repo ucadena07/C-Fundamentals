@@ -15,5 +15,27 @@ Car car4 = new Car();
 
 var message = @"This is a message, 
 from: Uli";
-Console.WriteLine(message.CountWords());
+
+//Console.WriteLine(message.CountWords());
+
+string firstName = "Nigel";
+if(firstName is { Length: 5 })
+{
+    //Console.WriteLine("six chars");
+}
+
+if (firstName.Length == 5)
+{
+    //Console.WriteLine("six chars");
+}
+
+if(car1 is { Brand:"AUDI" or "LEXUS", Year: > 2015 })
+{
+    Console.WriteLine("You have a good car");
+}else if( car1 is { Year: < 2015 })
+{
+    Console.WriteLine("Your car is getting old");
+}
+
+
 

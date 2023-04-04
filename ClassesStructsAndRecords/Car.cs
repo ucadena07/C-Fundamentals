@@ -25,8 +25,8 @@ namespace ClassesStructsAndRecords
         }
 
         internal static int InstancesCount { get; set; }    
-        internal int Year {get; set;}
-        internal int Speed { get; private set; } = 20;
+        public int Year {get; set;}
+        public int Speed { get; private set; } = 20;
         internal string CommercialName => $"{Brand} {Year}";
 
         //Functions and methods
