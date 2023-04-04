@@ -8,6 +8,12 @@ namespace ClassesStructsAndRecords
 {
     public class Car
     {
+        //constructor
+        public Car()
+        {
+            
+        }
+
         //Properties
         string _brand;
         int _year;
@@ -32,6 +38,8 @@ namespace ClassesStructsAndRecords
             }
             Speed = Speed + 50;
         }
+
+        internal void Stop() => Speed = 0;
 
     }
 }
