@@ -11,7 +11,7 @@ namespace ClassesStructsAndRecords
         //constructor
         public Car()
         {
-            
+            InstancesCount++;
         }
 
         //Properties
@@ -24,6 +24,7 @@ namespace ClassesStructsAndRecords
             set { _brand = value; }
         }
 
+        internal static int InstancesCount { get; set; }    
         internal int Year {get; set;}
         internal int Speed { get; private set; } = 20;
         internal string CommercialName => $"{Brand} {Year}";

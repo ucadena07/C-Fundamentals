@@ -8,7 +8,7 @@ namespace ClassesStructsAndRecords
 {
     internal class Calculator
     {
-        internal ResultDT ComputeDoubleAndTriple(int value)
+        internal static ResultDT ComputeDoubleAndTriple(int value)
         {
             var result = new ResultDT();    
 
