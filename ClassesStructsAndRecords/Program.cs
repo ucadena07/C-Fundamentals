@@ -37,5 +37,11 @@ if(car1 is { Brand:"AUDI" or "LEXUS", Year: > 2015 })
     Console.WriteLine("Your car is getting old");
 }
 
+Console.WriteLine("==============");
+var person = new { FirstName = "Henry", LastName = "Cadena", Age = 4 };
+var mutatedPerson = person with { Age = 100 };
+
+Console.WriteLine(mutatedPerson);
+
 
 
