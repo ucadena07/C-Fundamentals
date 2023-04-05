@@ -75,3 +75,8 @@ Console.WriteLine(comp2);
 
 
 
+ClassWithImmutablesProps imm = new ClassWithImmutablesProps()
+{
+    MyProperty1 = 1
+};
+
