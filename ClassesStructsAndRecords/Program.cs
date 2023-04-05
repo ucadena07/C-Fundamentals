@@ -43,5 +43,11 @@ var mutatedPerson = person with { Age = 100 };
 
 Console.WriteLine(mutatedPerson);
 
+//=================================
+Console.WriteLine("==============");
+var pointA = new Point(3, 5);
+
+Console.WriteLine(pointA.X);
+
 
 
