@@ -80,3 +80,12 @@ ClassWithImmutablesProps imm = new ClassWithImmutablesProps()
     MyProperty1 = 1
 };
 
+int[] numbers = {1,2};
+
+var length = numbers?.Length ?? 0;
+
+numbers = null;
+
+numbers ??= Array.Empty<int>();
+
+Console.WriteLine(numbers?.Length);
