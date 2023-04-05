@@ -49,5 +49,21 @@ var pointA = new Point(3, 5);
 
 Console.WriteLine(pointA.X);
 
+Console.WriteLine("==============");
+var result2 = Calculator.ComputeDoubleAndTriple(5);
+var result3 = Calculator.ComputeDoubleAndTriple(5);
+Console.WriteLine($"intances equal: {result2 == result3}");
+
+
+var pointB = new Point(3, 5);
+//Console.WriteLine($"point intances equal: {pointA == pointB}");
+
+Console.WriteLine("==============");
+
+var p1 = new Person() { FirstName = "Nigel", LastName = "Cadena" };
+var p2 = new Person() { FirstName = "Nigel", LastName = "Cadena" };
+Console.WriteLine($"person intances equal: {p1 == p2}");
+
+
 
 
