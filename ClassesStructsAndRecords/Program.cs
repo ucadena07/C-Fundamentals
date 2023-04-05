@@ -63,7 +63,15 @@ Console.WriteLine("==============");
 var p1 = new Person() { FirstName = "Nigel", LastName = "Cadena" };
 var p2 = new Person() { FirstName = "Nigel", LastName = "Cadena" };
 Console.WriteLine($"person intances equal: {p1 == p2}");
+Console.WriteLine("==============");
 
+var comp1 = new Company("Udemy", 2011);
+
+
+var comp2 = comp1 with { year = 2020 };
+
+Console.WriteLine(comp1);
+Console.WriteLine(comp2);
 
 
 
