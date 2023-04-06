@@ -89,3 +89,4 @@ numbers = null;
 numbers ??= Array.Empty<int>();
 
 Console.WriteLine(numbers?.Length);
+

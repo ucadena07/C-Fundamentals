@@ -1,0 +1,15 @@
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\bin\Debug\net7.0\OOP.exe
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\bin\Debug\net7.0\OOP.deps.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\bin\Debug\net7.0\OOP.runtimeconfig.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\bin\Debug\net7.0\OOP.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\bin\Debug\net7.0\OOP.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.csproj.AssemblyReference.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\refint\OOP.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.genruntimeconfig.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\ref\OOP.dll

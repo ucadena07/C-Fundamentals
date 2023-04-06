@@ -8,5 +8,6 @@ namespace ClassesStructsAndRecords
 {
     internal class Animal
     {
+        public string Name { get; set; }
     }
 }
