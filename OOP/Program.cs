@@ -1,7 +1,7 @@
 ﻿using OOP;
 
-Car car = new Car();
-car.Brand = "Audi";
+Car car = new Car("Audi");
+
 car.Year = 2017;
 
 Truck car2 = new Truck();
@@ -20,4 +20,6 @@ ReadBrand(car);
 ReadBrand(car2);
 car.GoInReverse();
 car2.GoInReverse();
+car.SoundHorn();
+car2.SoundHorn();
 
