@@ -13,6 +13,9 @@ internal class AWSFileStorage : IFileStorage
         Console.WriteLine("Saving file in aws");
         return "Aws's file url";
     }
-
+    public void Delete(string file)
+    {
+        Console.WriteLine("deleting file in aws");
+    }
 
 }
