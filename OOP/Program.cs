@@ -36,3 +36,5 @@ void acceptAnyParameter(object obj)
 }
 acceptAnyParameter(car);
 acceptAnyParameter(truck);
+
+
