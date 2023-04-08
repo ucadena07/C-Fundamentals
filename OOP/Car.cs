@@ -47,6 +47,11 @@ internal class Car : Vehicle
     {
         Console.WriteLine("Turning on the radio");
     }
+
+    public override string ToString()
+    {
+        return "value I want";
+    }
 }
 
 internal class Truck : Vehicle

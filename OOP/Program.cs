@@ -4,9 +4,9 @@ Car car = new Car("Audi");
 
 car.Year = 2017;
 
-Truck car2 = new Truck();
-car2.Brand = "Buick";
-car2.Year = 2010;
+Truck truck = new Truck();
+truck.Brand = "Buick";
+truck.Year = 2010;
 
 void ReadBrand(Vehicle vehicle)
 {
@@ -17,9 +17,22 @@ void ReadBrand(Vehicle vehicle)
 
 car.TurnOnRadio();
 ReadBrand(car);
-ReadBrand(car2);
+ReadBrand(truck);
 car.GoInReverse();
-car2.GoInReverse();
+truck.GoInReverse();
 car.SoundHorn();
-car2.SoundHorn();
+truck.SoundHorn();
+Console.WriteLine("=============================");
 
+
+
+void acceptAnyParameter(object obj)
+{
+    //var car = obj as Car; 
+    if(obj is Car car)
+    {
+        car.SoundHorn();
+    }
+}
+acceptAnyParameter(car);
+acceptAnyParameter(truck);
