@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesStructsAndRecords", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{05FD8828-B5F8-4303-A80B-4F45C976104C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilitites", "Utilitites\Utilitites.csproj", "{3A390576-7BD0-498E-A1A8-6023DDFB711C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{05FD8828-B5F8-4303-A80B-4F45C976104C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05FD8828-B5F8-4303-A80B-4F45C976104C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05FD8828-B5F8-4303-A80B-4F45C976104C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A390576-7BD0-498E-A1A8-6023DDFB711C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A390576-7BD0-498E-A1A8-6023DDFB711C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A390576-7BD0-498E-A1A8-6023DDFB711C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A390576-7BD0-498E-A1A8-6023DDFB711C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

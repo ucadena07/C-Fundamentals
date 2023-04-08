@@ -13,3 +13,6 @@ C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\n
 C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.pdb
 C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.genruntimeconfig.cache
 C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\ref\OOP.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\bin\Debug\net7.0\Utilitites.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\bin\Debug\net7.0\Utilitites.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\OOP\obj\Debug\net7.0\OOP.csproj.CopyComplete

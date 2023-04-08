@@ -1,0 +1,12 @@
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\bin\Debug\net7.0\Utilitites.deps.json
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\bin\Debug\net7.0\Utilitites.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\bin\Debug\net7.0\Utilitites.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\Utilitites.csproj.AssemblyReference.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\Utilitites.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\Utilitites.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\Utilitites.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\Utilitites.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\Utilitites.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\refint\Utilitites.dll
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\Utilitites.pdb
+C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\Utilitites\obj\Debug\net7.0\ref\Utilitites.dll

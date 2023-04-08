@@ -1,4 +1,5 @@
 ﻿using OOP;
+using Utilitites;
 
 Car car = new Car("Audi");
 
@@ -36,5 +37,11 @@ void acceptAnyParameter(object obj)
 }
 acceptAnyParameter(car);
 acceptAnyParameter(truck);
+Console.WriteLine("=============================");
+
+var publicClassForTesting = new PublicClassForTesting();
+
+publicClassForTesting.PublicMethod();
+
 
 

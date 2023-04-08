@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "OOP/1.0.0": {
-        "dependencies": {
-          "Utilitites": "1.0.0"
-        },
-        "runtime": {
-          "OOP.dll": {}
-        }
-      },
       "Utilitites/1.0.0": {
         "runtime": {
           "Utilitites.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "OOP/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Utilitites/1.0.0": {
       "type": "project",
       "serviceable": false,
