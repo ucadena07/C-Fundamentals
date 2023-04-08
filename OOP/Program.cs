@@ -1,4 +1,5 @@
 ﻿using OOP;
+using System.Diagnostics;
 using Utilitites;
 
 Car car = new Car("Audi");
@@ -43,5 +44,24 @@ var publicClassForTesting = new PublicClassForTesting();
 
 publicClassForTesting.PublicMethod();
 
+Console.WriteLine("=============================");
+var a = new ClassA();
+var b = new ClassB();   
+
+void Process(IMySecondInterface mySecond)
+{
+    mySecond.MethodFromSecondInterface();
+}
 
 
+Process(a);
+Process(b);
+
+Console.WriteLine("=============================");
+var movieController = new MoviesController();
+
+var azureStorage = new AzureFileStorage();
+var awsStorage = new AWSFileStorage();
+
+movieController.SavePoster("image.png", azureStorage);
+movieController.SavePoster("image.png", awsStorage);
