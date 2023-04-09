@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilitites", "Utilitites\Utilitites.csproj", "{3A390576-7BD0-498E-A1A8-6023DDFB711C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebuggingAndErrorHandling", "DebuggingAndErrorHandling\DebuggingAndErrorHandling.csproj", "{E66C3594-1418-4E6C-B201-7D71F183C237}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3A390576-7BD0-498E-A1A8-6023DDFB711C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A390576-7BD0-498E-A1A8-6023DDFB711C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A390576-7BD0-498E-A1A8-6023DDFB711C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66C3594-1418-4E6C-B201-7D71F183C237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66C3594-1418-4E6C-B201-7D71F183C237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66C3594-1418-4E6C-B201-7D71F183C237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66C3594-1418-4E6C-B201-7D71F183C237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
