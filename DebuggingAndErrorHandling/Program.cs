@@ -68,13 +68,33 @@ void Process(int a, string name)
 
 Process(7, "Ulises");
 
-ClassA.ProcessA();
+try
+{
+	ClassA.ProcessA();
+}
+catch (Exception ex)
+{
+
+	Console.WriteLine("more processing");
+
+	Console.WriteLine(ex.Message);
+}
+
 
 internal class ClassA
 {
     public static void ProcessA()
     {
-        ClassB.ProcessB();
+        try
+        {
+            throw new NotImplementedException();
+        }
+        catch (Exception ex)
+        {
+
+            Console.WriteLine("Processing exp");
+            throw;   
+        }
     }
 }
 
