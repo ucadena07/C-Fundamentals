@@ -1,5 +1,9 @@
-﻿using System.ComponentModel;
+﻿using DebuggingAndErrorHandling;
+using System.ComponentModel;
 using System.Diagnostics;
+
+throw new CustomException("another custom error");
+
 
 var myWritter = new TextWriterTraceListener(Console.Out);
 Trace.Listeners.Add(myWritter);
@@ -71,4 +75,6 @@ internal class ClassC
         throw new Exception();
     }
 }
+
+
 

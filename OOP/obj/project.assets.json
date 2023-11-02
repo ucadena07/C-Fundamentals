@@ -1548,11 +1548,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\OOP\\OOP.csproj",
+      "projectUniqueName": "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\OOP\\OOP.csproj",
       "projectName": "OOP",
-      "projectPath": "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\OOP\\OOP.csproj",
+      "projectPath": "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\OOP\\OOP.csproj",
       "packagesPath": "C:\\Users\\ucade_lbz6a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\OOP\\obj\\",
+      "outputPath": "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\OOP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ucade_lbz6a\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1569,8 +1569,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Utilitites\\Utilitites.csproj": {
-              "projectPath": "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Utilitites\\Utilitites.csproj"
+            "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Utilitites\\Utilitites.csproj": {
+              "projectPath": "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Utilitites\\Utilitites.csproj"
             }
           }
         }
@@ -1606,7 +1606,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

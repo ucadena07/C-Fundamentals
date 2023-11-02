@@ -13,3 +13,17 @@ C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErr
 C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.pdb
 C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.genruntimeconfig.cache
 C:\Users\ucade_lbz6a\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\ref\DebuggingAndErrorHandling.dll
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\bin\Debug\net7.0\DebuggingAndErrorHandling.exe
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\bin\Debug\net7.0\DebuggingAndErrorHandling.deps.json
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\bin\Debug\net7.0\DebuggingAndErrorHandling.runtimeconfig.json
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\bin\Debug\net7.0\DebuggingAndErrorHandling.dll
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\bin\Debug\net7.0\DebuggingAndErrorHandling.pdb
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.dll
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\refint\DebuggingAndErrorHandling.dll
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.pdb
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\DebuggingAndErrorHandling.genruntimeconfig.cache
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\DebuggingAndErrorHandling\obj\Debug\net7.0\ref\DebuggingAndErrorHandling.dll

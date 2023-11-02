@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Variables\\Variables.csproj",
+      "projectUniqueName": "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Variables\\Variables.csproj",
       "projectName": "Variables",
-      "projectPath": "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Variables\\Variables.csproj",
+      "projectPath": "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Variables\\Variables.csproj",
       "packagesPath": "C:\\Users\\ucade_lbz6a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ucade_lbz6a\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Variables\\obj\\",
+      "outputPath": "C:\\Users\\ucade_lbz6a\\OneDrive\\Documents\\ASP.NET\\Fundamentals\\Fundamentals\\Variables\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ucade_lbz6a\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
