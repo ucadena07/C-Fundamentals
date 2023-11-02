@@ -8,9 +8,21 @@ namespace DebuggingAndErrorHandling;
 
 internal class CustomException : Exception
 {
-    public CustomException() : base("my custom error message")
+    public CustomException(ErrorType errorType) : base("my custom error message")
     {
-            
-    }
-    public CustomException(string msg) : base(msg) { }
+		ErrorType = errorType;
+	}
+    public CustomException(ErrorType errorType, string msg) : base(msg)
+	{
+		ErrorType = errorType;
+	}
+
+	public ErrorType ErrorType { get; }
+}
+
+public enum ErrorType
+{
+    ClientError,
+    ServerError,
+    ResourceNotFound
 }

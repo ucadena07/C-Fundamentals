@@ -2,7 +2,26 @@
 using System.ComponentModel;
 using System.Diagnostics;
 
-throw new CustomException("another custom error");
+try
+{
+	throw new CustomException(ErrorType.ResourceNotFound);
+}
+catch (CustomException ex) when (ex.ErrorType == ErrorType.ClientError)
+{
+
+  Console.WriteLine("client error");
+}
+catch (CustomException ex) when (ex.ErrorType == ErrorType.ServerError)
+{
+	Console.WriteLine("server error");
+
+}
+catch (CustomException ex) when (ex.ErrorType == ErrorType.ResourceNotFound)
+{
+
+	Console.WriteLine("resource not found error");
+}
+
 
 
 var myWritter = new TextWriterTraceListener(Console.Out);
