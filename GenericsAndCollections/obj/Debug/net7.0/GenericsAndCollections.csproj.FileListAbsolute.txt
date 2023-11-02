@@ -1,0 +1,14 @@
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\bin\Debug\net7.0\GenericsAndCollections.exe
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\bin\Debug\net7.0\GenericsAndCollections.deps.json
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\bin\Debug\net7.0\GenericsAndCollections.runtimeconfig.json
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\bin\Debug\net7.0\GenericsAndCollections.dll
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\bin\Debug\net7.0\GenericsAndCollections.pdb
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\GenericsAndCollections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\GenericsAndCollections.AssemblyInfoInputs.cache
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\GenericsAndCollections.AssemblyInfo.cs
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\GenericsAndCollections.csproj.CoreCompileInputs.cache
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\GenericsAndCollections.dll
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\refint\GenericsAndCollections.dll
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\GenericsAndCollections.pdb
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\GenericsAndCollections.genruntimeconfig.cache
+C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\GenericsAndCollections\obj\Debug\net7.0\ref\GenericsAndCollections.dll
