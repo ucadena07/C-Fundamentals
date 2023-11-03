@@ -85,9 +85,9 @@ var firstTwo = enumOfNumbers.Take(2);
 
 foreach (var value in firstTwo)
 {
-    Console.WriteLine(value);
+    //Console.WriteLine(value);
 }
-Console.WriteLine("END");
+//Console.WriteLine("END");
 
 IEnumerable<int> First3Numbers()
 {
@@ -96,3 +96,16 @@ IEnumerable<int> First3Numbers()
     yield return 3;
 }
 
+IEnumerable<int> Add2(int value)
+{
+    for(; ; ) {
+        value += 2;
+        yield return value;
+    }
+}
+
+IEnumerable<int> value2 = Add2(2).Take(5);
+foreach (var value in value2)
+{
+    Console.WriteLine(value);
+}
