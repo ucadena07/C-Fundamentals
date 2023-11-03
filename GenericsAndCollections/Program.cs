@@ -65,10 +65,34 @@ for (int i = 0; i< 10; i++)
 
 foreach (var keyValuePair in dictionaryEvenOdd)
 {
-    Console.WriteLine(keyValuePair.Key);
+    //Console.WriteLine(keyValuePair.Key);
     foreach (var value in keyValuePair.Value)
     {
-        Console.WriteLine(value);
+        //Console.WriteLine(value);
     }
-    Console.WriteLine("==============");
+    //Console.WriteLine("==============");
 }
+//=================== Get Hash Code  ==================================================
+
+string Test = "Ulises";
+//Console.WriteLine(Test.GetHashCode());
+
+//=================== Yield  ==================================================
+
+var enumOfNumbers = First3Numbers();
+var firstNum = enumOfNumbers.First();
+var firstTwo = enumOfNumbers.Take(2);
+
+foreach (var value in firstTwo)
+{
+    Console.WriteLine(value);
+}
+Console.WriteLine("END");
+
+IEnumerable<int> First3Numbers()
+{
+    yield return 1;
+    yield return 2;
+    yield return 3;
+}
+
