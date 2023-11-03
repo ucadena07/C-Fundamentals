@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericsAndCollections;
 
-internal class ArrayUtils<T> : IArrayUtilities<T>	
+internal class ArrayUtils<T>  : IArrayUtilities<T> where T : notnull
 {
 	public int ComputeLengthOfArray(T[] array)
 	{
@@ -20,7 +20,7 @@ internal class ArrayUtils<T> : IArrayUtilities<T>
 	}
 }
 
-public interface IArrayUtilities<T>
+public interface IArrayUtilities<T> where T: notnull
 {
 	int ComputeLengthOfArray(T[] array);
 	T FirstElementOrDefault(T[] array);
