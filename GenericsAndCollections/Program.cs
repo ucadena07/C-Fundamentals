@@ -107,5 +107,24 @@ IEnumerable<int> Add2(int value)
 IEnumerable<int> value2 = Add2(2).Take(5);
 foreach (var value in value2)
 {
-    Console.WriteLine(value);
+   // Console.WriteLine(value);
+}
+
+
+//=================== IComparable  ==================================================
+Person uli = new() { Name = "Uli", Age = 30 };
+Person haylee = new() { Name = "Haylee", Age = 28 };
+Person nigel = new() { Name = "nigel", Age = 20 };
+Person henry = new() { Name = "henry", Age = 4 };
+Person rubi = new() { Name = "rubi", Age = 20 };
+Person max = new() { Name = "max", Age = 15 };
+
+var x = uli.CompareTo(haylee);
+//Console.WriteLine(x);
+
+var people = new List<Person>() { uli, haylee, nigel,henry,rubi,max };
+people.Sort(new ComparerOfPersonByName());
+foreach (var person in people)
+{
+    Console.WriteLine(person.Name);
 }
