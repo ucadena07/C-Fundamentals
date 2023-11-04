@@ -1,4 +1,6 @@
-﻿int[] numbers = Enumerable.Range(1, 20).ToArray(); 
+﻿using IntroToLINQ;
+
+int[] numbers = Enumerable.Range(1, 20).ToArray(); 
 
 //This is LINQ (Method syntax)
 var test = numbers.Where(x => x % 2 == 0).ToList();  
@@ -39,3 +41,38 @@ foreach (var num in evenNums2)
 //==== where func ==============
 var odd = numbers.Where(x => x % 2 == 1).ToList();
 var evenBiggerThan10 = numbers.Where(x => x % 2 == 0 && x > 10).ToList();
+
+
+//More complex objects 
+var people = new List<Person>() {
+    new Person {
+        Name = "Eduardo",
+        Age = 30,
+        HiredDate = new DateTime(2021, 1, 2),
+        IsSingle = true },
+    new Person {
+        Name = "Nidia",
+        Age = 19,
+        HiredDate = new DateTime(2015, 11, 22),
+        IsSingle = true },
+    new Person {
+        Name = "Alejandro",
+        Age = 45,
+        HiredDate = new DateTime(2020, 4, 12),
+        IsSingle = false },
+    new Person {
+        Name = "Valentina",
+        Age = 24,
+        HiredDate = new DateTime(2021, 7, 8),
+        IsSingle = false },
+    new Person {
+        Name = "Roberto",
+        Age = 61,
+        HiredDate = DateTime.Now.AddDays(-1),
+        IsSingle = false },
+};
+
+var peopleWithAge25OrLess = people.Where(x => x.Age <= 25).ToList();    
+var singlePeople = people.Where(x => x.IsSingle).ToList();    
+var singleLessThan25 = people.Where(x => x.IsSingle && x.Age < 25).ToList();
+var hireDateLessThan3MonthsAgo = people.Where(x => x.HiredDate >= DateTime.Today.AddMonths(3)).ToList();

@@ -10,7 +10,7 @@ internal class Person
 {
     public string Name { get; set; }
     public int Age { get; set; }
-    public bool Single { get; set; }
+    public bool IsSingle { get; set; }
     public DateTime HiredDate { get; set; }
     public List<string> PhoneNumbers { get; set; }
     public int CompanyId { get; set; }
