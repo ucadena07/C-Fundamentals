@@ -83,4 +83,18 @@ var firstPerson3 = people.FirstOrDefault(x => x.Age < 25);
 //==== Order ==============
 var orderedNumbers = numbers.OrderBy(x => x).ToList();  
 var orderedNumbers2 = numbers.OrderByDescending(x => x).ToList();  
-var peopleOrderByAge = people.OrderBy(x => x.Age).ToList(); 
+var peopleOrderByAge = people.OrderBy(x => x.Age).ToList();
+//==== Select ==============
+var names = people.Select(x => x.Name).ToList();
+var namesAndAges = people.Select(x => new {x.Name, x.Age}).ToList();
+var dto = people.Select(x => new PersonDTO { Age = x.Age, Name = x.Name}).ToList();
+
+//math operation
+var ints = Enumerable.Range(1, 5).ToList();
+var intsDouble = ints.Select(x => x*2).ToList();
+
+//using the index
+foreach (var item in people.Select((x, index) => new {Name = x.Name, Index = index +1 }))
+{
+    Console.WriteLine($"{item.Name} - {item.Index}");
+}
