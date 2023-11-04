@@ -13,25 +13,29 @@ var test2 = (from n in numbers
 // Step1 : Deferred execution
 var evenNums = numbers.Where(x => 
 {
-    Console.WriteLine($"Evaluating if {x} is even");
+    //Console.WriteLine($"Evaluating if {x} is even");
     return x % 2 == 0; 
 });
 
 foreach (var num in evenNums)
 {
-    Console.WriteLine($"Yes, {num} is even");
+    //Console.WriteLine($"Yes, {num} is even");
 }
-Console.WriteLine("The END");
-Console.WriteLine("=====================================");
+//Console.WriteLine("The END");
+//Console.WriteLine("=====================================");
 // Step2 : NON-Deferred execution
 var evenNums2 = numbers.Where(x =>
 {
-    Console.WriteLine($"Evaluating if {x} is even");
+    //Console.WriteLine($"Evaluating if {x} is even");
     return x % 2 == 0;
 }).ToList();
 
 foreach (var num in evenNums2)
 {
-    Console.WriteLine($"Yes, {num} is even");
+    //Console.WriteLine($"Yes, {num} is even");
 }
-Console.WriteLine("The END");
+//Console.WriteLine("The END");
+
+//==== where func ==============
+var odd = numbers.Where(x => x % 2 == 1).ToList();
+var evenBiggerThan10 = numbers.Where(x => x % 2 == 0 && x > 10).ToList();
