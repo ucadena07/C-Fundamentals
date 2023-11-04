@@ -76,3 +76,11 @@ var peopleWithAge25OrLess = people.Where(x => x.Age <= 25).ToList();
 var singlePeople = people.Where(x => x.IsSingle).ToList();    
 var singleLessThan25 = people.Where(x => x.IsSingle && x.Age < 25).ToList();
 var hireDateLessThan3MonthsAgo = people.Where(x => x.HiredDate >= DateTime.Today.AddMonths(3)).ToList();
+//==== FirstOrDefault ==============
+var firstPerson = people.First();   
+var firstPerson2 = people.FirstOrDefault();   
+var firstPerson3 = people.FirstOrDefault(x => x.Age < 25);
+//==== Order ==============
+var orderedNumbers = numbers.OrderBy(x => x).ToList();  
+var orderedNumbers2 = numbers.OrderByDescending(x => x).ToList();  
+var peopleOrderByAge = people.OrderBy(x => x.Age).ToList(); 
