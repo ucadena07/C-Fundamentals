@@ -3,7 +3,7 @@ if (File.Exists(fileLocation))
 {
     var lines = File.ReadAllLines(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\exampleLines.txt");
     var copyLocation = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\exampleLines_copy.txt";
-    File.Copy(fileLocation, copyLocation,overwrite: true);
+    File.Copy(fileLocation, copyLocation, overwrite: true);
     //Console.WriteLine(lines);
 }
 
@@ -12,7 +12,7 @@ var sub2 = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundam
 Directory.CreateDirectory(route);
 
 var routeToEnumerate = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles";
-var routes = Directory.EnumerateDirectories(routeToEnumerate,"*",SearchOption.AllDirectories);
+var routes = Directory.EnumerateDirectories(routeToEnumerate, "*", SearchOption.AllDirectories);
 foreach (var routePath in routes)
 {
     //Console.WriteLine(routePath);
@@ -33,10 +33,26 @@ foreach (var file in files)
 //var content = File.ReadAllText(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\example.txt");
 
 //============= Streams ==============================
-var sw = 
-    new StreamWriter(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\custom.txt", append:true);
-sw.WriteLine("Good morning");
-sw.Write("In this letter ");
-sw.WriteLine($"The time is {DateTime.Now.ToString("hh:mm:sss")}");
-sw.WriteLine("bye");
-sw.Dispose();
+//good for big methods 
+using (var sw =
+    new StreamWriter(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\custom.txt", append: true))
+{
+    sw.WriteLine("Good morning");
+    sw.Write("In this letter ");
+    sw.WriteLine($"The time is {DateTime.Now.ToString("hh:mm:sss")}");
+    sw.WriteLine("bye");
+}
+
+
+//good for small methods 
+void UseSW()
+{
+    using var sw = new StreamWriter(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\custom.txt", append: true);
+    sw.WriteLine("Good morning");
+    sw.Write("In this letter ");
+    sw.WriteLine($"The time is {DateTime.Now.ToString("hh:mm:sss")}");
+    sw.WriteLine("bye");
+
+}
+
+///sw.Dispose();
