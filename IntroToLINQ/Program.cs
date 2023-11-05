@@ -126,5 +126,15 @@ var peopleAndPhoneNumbers = people.SelectMany(p => p.PhoneNumbers, (person, phon
 });
 foreach (var item in peopleAndPhoneNumbers)
 {
-    Console.WriteLine($"{item.Person.Name} - {item.phoneNumber}");
+    //Console.WriteLine($"{item.Person.Name} - {item.phoneNumber}");
 }
+
+//==== Scalars ==============
+Console.WriteLine(people.Count());
+Console.WriteLine(people.Count(x => x.IsSingle));
+Console.WriteLine(list1.Sum());
+Console.WriteLine(people.Sum(x => x.Age));
+Console.WriteLine(list1.Min());
+Console.WriteLine(people.Min(x => x.Age));
+Console.WriteLine(people.Max(x => x.Age));
+Console.WriteLine(people.Average(x => x.Age));
