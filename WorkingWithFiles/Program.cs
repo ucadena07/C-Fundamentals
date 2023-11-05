@@ -77,4 +77,15 @@ using (var sw = new StreamWriter(dest, append: false))
     sw.Write(stringBuilder.ToString());
 }
 
+//=============== CSV ================================== 
+var stringBuilderForCsv = new StringBuilder();
+var destCSV = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\people.csv";
+foreach (var person in people)
+{
+    stringBuilderForCsv.AppendLine($"{person.Id},{person.Name},{person.Salary}");
+}
+using (var sw = new StreamWriter(destCSV, append: false,  Encoding.UTF8))
+{
+    sw.Write(stringBuilderForCsv.ToString());
+}
 ///sw.Dispose();
