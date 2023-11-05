@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using WorkingWithFiles;
+using System.Text.Json;
 
 var fileLocation = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\exampleLines.txt";
 if (File.Exists(fileLocation))
@@ -95,8 +96,21 @@ using(var sr = new StreamReader(destCSV))
     var line = sr.ReadLine();
     while(line != null)
     {
-        Console.WriteLine(line);
+        //Console.WriteLine(line);
         line = sr.ReadLine();
     }
 }
-///sw.Dispose();
+
+//=============== JSON ================================== 
+var destJson = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\people.json";
+
+var p1 = people.FirstOrDefault();
+var json = JsonSerializer.Serialize(p1);
+using(var sw = new StreamWriter(destJson, append: false))
+{
+    sw.Write(json);
+}
+
+var fileContent = File.ReadAllText(destJson);
+var desirializedPerson = JsonSerializer.Deserialize<Person>(fileContent);
+Console.WriteLine("The end ");
