@@ -1,4 +1,7 @@
-﻿var fileLocation = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\exampleLines.txt";
+﻿using System.Text;
+using WorkingWithFiles;
+
+var fileLocation = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\exampleLines.txt";
 if (File.Exists(fileLocation))
 {
     var lines = File.ReadAllLines(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\exampleLines.txt");
@@ -53,6 +56,25 @@ void UseSW()
     sw.WriteLine($"The time is {DateTime.Now.ToString("hh:mm:sss")}");
     sw.WriteLine("bye");
 
+}
+
+var dest = @"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\people.txt";
+var people = new List<Person>()
+{
+    new() { Id = 1, Name="Henry", Salary=25},
+    new() { Id = 2, Name="Nigel", Salary=30},
+    new() { Id = 3, Name="Alo", Salary=40},
+    new() { Id = 4, Name="Uli", Salary=45},
+    new() { Id = 5, Name="Haylee", Salary=50},
+};
+var stringBuilder = new StringBuilder();    
+foreach (var person in people)
+{                           
+    stringBuilder.AppendLine($"{person.Id.ToString().PadLeft(10,'0')}|{person.Name.PadLeft(30)}|{person.Salary.ToString().PadLeft(10,'0')}");  
+}
+using (var sw = new StreamWriter(dest, append: false))
+{
+    sw.Write(stringBuilder.ToString());
 }
 
 ///sw.Dispose();
