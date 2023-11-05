@@ -88,4 +88,15 @@ using (var sw = new StreamWriter(destCSV, append: false,  Encoding.UTF8))
 {
     sw.Write(stringBuilderForCsv.ToString());
 }
+//=============== Stream reader ================================== 
+
+using(var sr = new StreamReader(destCSV))
+{
+    var line = sr.ReadLine();
+    while(line != null)
+    {
+        Console.WriteLine(line);
+        line = sr.ReadLine();
+    }
+}
 ///sw.Dispose();
