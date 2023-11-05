@@ -27,8 +27,16 @@ Directory.Delete(sub2);
 
 foreach (var file in files)
 {
-    Console.WriteLine(Path.GetFileName(file) + $" ext: {Path.GetExtension(file)}");
+    //Console.WriteLine(Path.GetFileName(file) + $" ext: {Path.GetExtension(file)}");
 }
 
 //var content = File.ReadAllText(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\example.txt");
 
+//============= Streams ==============================
+var sw = 
+    new StreamWriter(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\custom.txt", append:true);
+sw.WriteLine("Good morning");
+sw.Write("In this letter ");
+sw.WriteLine($"The time is {DateTime.Now.ToString("hh:mm:sss")}");
+sw.WriteLine("bye");
+sw.Dispose();
