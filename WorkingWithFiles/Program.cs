@@ -21,9 +21,14 @@ foreach (var routePath in routes)
 var files = Directory.EnumerateFiles(routeToEnumerate, "*.json", SearchOption.AllDirectories);
 foreach (var file in files)
 {
-    Console.WriteLine(file);
+    //Console.WriteLine(file);
 }
 Directory.Delete(sub2);
+
+foreach (var file in files)
+{
+    Console.WriteLine(Path.GetFileName(file) + $" ext: {Path.GetExtension(file)}");
+}
 
 //var content = File.ReadAllText(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\WorkingWithFiles\example.txt");
 
