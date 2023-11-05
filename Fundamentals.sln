@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsAndCollections", "G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToLINQ", "IntroToLINQ\IntroToLINQ.csproj", "{28824C10-F0B7-4CF2-A0F6-30DCB71491C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFiles", "WorkingWithFiles\WorkingWithFiles.csproj", "{099274B9-6240-4C45-A102-0C69442DC9A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{28824C10-F0B7-4CF2-A0F6-30DCB71491C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28824C10-F0B7-4CF2-A0F6-30DCB71491C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28824C10-F0B7-4CF2-A0F6-30DCB71491C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099274B9-6240-4C45-A102-0C69442DC9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099274B9-6240-4C45-A102-0C69442DC9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099274B9-6240-4C45-A102-0C69442DC9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099274B9-6240-4C45-A102-0C69442DC9A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
