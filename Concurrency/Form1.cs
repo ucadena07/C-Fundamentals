@@ -20,37 +20,34 @@ namespace Concurrency
         {
             loadingGIF.Visible = true;
             var sw = new Stopwatch();
-            var currentDic = AppDomain.CurrentDomain.BaseDirectory;
-            var destSeq = Path.Combine(currentDic, @"images\seq");
-            var destParallel = Path.Combine(currentDic, @"images\par");
+        
+            int colMatA = 1080;
+            int rowMatA = 1000;
+            int colMatB = 750;
 
-            PrepareExecution(destParallel, destSeq);
-            var images = GetImages();
+            var matA = MatrixUtilities.InitializeMatrix(rowMatA, colMatA);
+            var matB = MatrixUtilities.InitializeMatrix(colMatA, colMatB);
             sw.Start();
-
-            //sequential 
-            foreach ( var image in images )
+            await Task.Run(() =>
             {
-                await ProcessImage(destSeq,image);
-            }
-            await Console.Out.WriteLineAsync($"Seq took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.");
-            sw.Reset();
-            sw.Start();
-
-            var tasks = images.Select(async image =>
-            {
-                await ProcessImage(destParallel,image); 
+                MatrixUtilities.MultiplyMatricesSequentally(matA, matB);
             });
 
-            await Task.WhenAll(tasks);
-            await Console.Out.WriteLineAsync($"Parallel took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.");
 
 
             sw.Stop();
             loadingGIF.Visible = false;
-            //var message = $"The program took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.";
-            //await Console.Out.WriteLineAsync(message);
-
+            var message = $"The program took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.";
+            await Console.Out.WriteLineAsync(message);
+            sw.Reset();
+            sw.Start();
+            await Task.Run(() =>
+            {
+                MatrixUtilities.MultiplyMatricesInParallel(matA, matB);
+            });
+            sw.Stop();
+            var message2 = $"The program took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.";
+            await Console.Out.WriteLineAsync(message2);
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
@@ -152,4 +149,42 @@ namespace Concurrency
 //{
 //    await Task.Delay(1000);
 //    return "Uli";
+//}
+
+//================================
+//private async void beginBtn_Click(object sender, EventArgs e)
+//{
+//    loadingGIF.Visible = true;
+//    var sw = new Stopwatch();
+//    var currentDic = AppDomain.CurrentDomain.BaseDirectory;
+//    var destSeq = Path.Combine(currentDic, @"images\seq");
+//    var destParallel = Path.Combine(currentDic, @"images\par");
+
+//    PrepareExecution(destParallel, destSeq);
+//    var images = GetImages();
+//    sw.Start();
+
+//    //sequential 
+//    foreach (var image in images)
+//    {
+//        await ProcessImage(destSeq, image);
+//    }
+//    await Console.Out.WriteLineAsync($"Seq took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.");
+//    sw.Reset();
+//    sw.Start();
+
+//    var tasks = images.Select(async image =>
+//    {
+//        await ProcessImage(destParallel, image);
+//    });
+
+//    await Task.WhenAll(tasks);
+//    await Console.Out.WriteLineAsync($"Parallel took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.");
+
+
+//    sw.Stop();
+//    loadingGIF.Visible = false;
+//    //var message = $"The program took {sw.ElapsedMilliseconds / 1000.0} seconds to finish.";
+//    //await Console.Out.WriteLineAsync(message);
+
 //}
