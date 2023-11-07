@@ -2,12 +2,12 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+ 
 using IHost host = Host.CreateDefaultBuilder(args).Build();
 var configuration = host.Services.GetService<IConfiguration>();
 var connectionString = configuration.GetConnectionString("DefaultConnection");
 
-
+var name = "Nigel Cadena";
 try
 {
 
@@ -15,9 +15,10 @@ try
 	{
 		connection.Open();
         var query = @"INSERT INTO People (Name)
-                        VALUES('Ulises Cadena')";
+                        VALUES(@name)";
         using (var command = new SqlCommand(query, connection))
         {
+            command.Parameters.Add(new SqlParameter("@name", name));
             var rowsAffected = await command.ExecuteNonQueryAsync();
             Console.WriteLine($"Affected rows {rowsAffected}");
         }
