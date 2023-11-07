@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using AdoNet;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,9 +23,18 @@ try
             {
                 var dt = new DataTable();
                 adapter.Fill(dt);
-                foreach (DataRow dataRow in dt.Rows)
+
+                var people = dt.AsEnumerable().Select(row =>
                 {
-                    Console.WriteLine($"{dataRow["Id"]} | {dataRow["Name"]}");
+                   return  new Person()
+                    {
+                        Id = row.Field<int>("Id"),
+                        Name = row.Field<string>("Name")
+                    };
+                });
+                foreach (Person p in people)
+                {
+                    Console.WriteLine($"{p.Id} | {p.Name}");
                 }
             }
         }
