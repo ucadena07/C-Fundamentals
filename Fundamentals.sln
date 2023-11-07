@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concurrency", "Concurrency\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNet", "AdoNet\AdoNet.csproj", "{CE0D9332-C648-416E-B5E6-25686ACB7FBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionAndMetadata", "ReflectionAndMetadata\ReflectionAndMetadata.csproj", "{C591D902-46AF-4E22-B72C-C88DD423C3D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{CE0D9332-C648-416E-B5E6-25686ACB7FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE0D9332-C648-416E-B5E6-25686ACB7FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE0D9332-C648-416E-B5E6-25686ACB7FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C591D902-46AF-4E22-B72C-C88DD423C3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C591D902-46AF-4E22-B72C-C88DD423C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C591D902-46AF-4E22-B72C-C88DD423C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C591D902-46AF-4E22-B72C-C88DD423C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
