@@ -11,6 +11,8 @@
 //Example 1: Instantiating a class by the type
 using ReflectionAndMetadata;
 using System.Collections;
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 
 var personWithoutNameViaType = (Person)Activator.CreateInstance(typeof(Person));
 
@@ -59,3 +61,53 @@ var stringType = typeof(string);
 var iEnumerableType= typeof(IEnumerable);
 var stringImplementsIEnumerable = stringType.IsAssignableTo(iEnumerableType);
 Console.WriteLine(stringImplementsIEnumerable);
+Console.WriteLine("=========================");
+var person = new Person();
+person.Age = 17;
+person.Salary = 20_000;
+var errors = ValidateObject(person);
+foreach (var error in errors)
+{
+    Console.WriteLine($"Property: {error.Property};Error: {error.ErrorMessage}");
+}
+
+bool ValidatePerson(Person p)
+{
+    var type = p.GetType();
+    var propertyAge = type.GetProperty("Age");
+    if (propertyAge.IsDefined(typeof(RangeAttribute)))
+    {
+        var rangeAttr = (RangeAttribute)Attribute.GetCustomAttribute(propertyAge, typeof(RangeAttribute));
+        return p.Age >= (int)rangeAttr.Minimum && p.Age <= (int)rangeAttr.Maximum;
+    }
+    return true;
+}
+
+IEnumerable<ValidationError> ValidateObject(object obj)
+{
+    var type = obj.GetType();
+    var properties = type.GetProperties();
+    var result = new List<ValidationError>();
+
+    foreach (var property in properties)
+    {
+        if (property.IsDefined(typeof(RangeAttribute)))
+        {
+            var rangeAttr = (RangeAttribute)Attribute.GetCustomAttribute(property, typeof(RangeAttribute));
+            var value = (int)property.GetValue(obj);
+            var min = (int)rangeAttr.Minimum;
+            var max = (int)rangeAttr.Maximum;   
+            var isValid = value >= min && value <= max;
+            if (!isValid)
+            {
+                result.Add(new()
+                {
+                    Property = property.Name,
+                    ErrorMessage = $"The value should be between {min} and {max}"
+                });
+            }
+        }
+    }
+
+    return result;
+}
