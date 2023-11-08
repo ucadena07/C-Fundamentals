@@ -36,7 +36,7 @@ type.InvokeMember("PrintMessage", System.Reflection.BindingFlags.InvokeMethod, n
 
 //Example 6: Invoking a method with return value
 var result = type.InvokeMember("GettingAValue", System.Reflection.BindingFlags.InvokeMethod, null, utilities, new object[] { });
-Console.WriteLine($"We got the value {result}");
+//Console.WriteLine($"We got the value {result}");
 
 
 //Example 7: Invoking a static method 
@@ -44,17 +44,17 @@ type.InvokeMember("StaticMethod", System.Reflection.BindingFlags.InvokeMethod, n
 
 //Example 8: Invoking a private method 
 type.InvokeMember("PrivateMethod", System.Reflection.BindingFlags.InvokeMethod | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance, null, utilities, new object[] { });
-Console.WriteLine("=========================");
+//Console.WriteLine("=========================");
 
 //Example 9: Getting the base type
 var baseTypeOfCar = typeof(Car).BaseType;
-Console.WriteLine($"The base type {baseTypeOfCar}");
+//Console.WriteLine($"The base type {baseTypeOfCar}");
 
 //Example 10: Getting the interfaces
-Console.WriteLine($"The intefaces of STRING are: ");
+//Console.WriteLine($"The intefaces of STRING are: ");
 foreach (var item in typeof(string).GetInterfaces())
 {
-    Console.WriteLine(item);
+    //Console.WriteLine(item);
 }
 //Example 11: Does a type inheret from a specific class or interface
 var stringType = typeof(string);
@@ -68,7 +68,7 @@ person.Salary = 20_000;
 var errors = ValidateObject(person);
 foreach (var error in errors)
 {
-    Console.WriteLine($"Property: {error.Property};Error: {error.ErrorMessage}");
+    //Console.WriteLine($"Property: {error.Property};Error: {error.ErrorMessage}");
 }
 
 bool ValidatePerson(Person p)
@@ -110,4 +110,21 @@ IEnumerable<ValidationError> ValidateObject(object obj)
     }
 
     return result;
+}
+Console.WriteLine("=========================");
+
+foreach (var action in Enum.GetValues<Actions>())
+{
+    var field = typeof(Actions).GetField(action.ToString());    
+    var hideAttr = field.GetCustomAttribute(typeof(HideAttribute));
+    if (hideAttr is not null)
+    {
+        var hide = ((HideAttribute)hideAttr).Hide();
+        if (hide)
+        {
+            continue;
+        }
+
+    }
+    Console.WriteLine(action);
 }
