@@ -9,10 +9,14 @@
 //Console.WriteLine($"The max value of an integer is {t.GetField("MaxValue").GetValue(default(int))}");
 
 //Example 1: Instantiating a class by the type
+using Newtonsoft.Json;
 using ReflectionAndMetadata;
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
+using System.Dynamic;
 using System.Reflection;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 var personWithoutNameViaType = (Person)Activator.CreateInstance(typeof(Person));
 
@@ -128,3 +132,21 @@ foreach (var action in Enum.GetValues<Actions>())
     }
     Console.WriteLine(action);
 }
+Console.WriteLine("============DYNAMIC=============");
+
+var jsonContent = File.ReadAllText(@"C:\Users\ucade_lbz6a\OneDrive\Documents\ASP.NET\Fundamentals\Fundamentals\ReflectionAndMetadata\example.json");
+
+dynamic obj = JsonConvert.DeserializeObject<dynamic>(jsonContent);
+Console.WriteLine(obj.addresses[0].street);
+
+
+Console.WriteLine("============EXPANDO=============");
+dynamic expandoObj = new ExpandoObject();
+expandoObj.Name = "Nigel";
+Console.WriteLine(expandoObj.Name);
+expandoObj.LastName = "Cadena";
+Console.WriteLine(expandoObj.LastName);
+expandoObj.Sum = new Func<int, int, int>((int a, int b) => a+b);
+Console.WriteLine(expandoObj.Sum(1,2));
+var dict = (IDictionary<string, object>)expandoObj;
+Console.WriteLine(dict["Name"]);
