@@ -150,3 +150,6 @@ expandoObj.Sum = new Func<int, int, int>((int a, int b) => a+b);
 Console.WriteLine(expandoObj.Sum(1,2));
 var dict = (IDictionary<string, object>)expandoObj;
 Console.WriteLine(dict["Name"]);
+
+Console.WriteLine("============Source Generator=============");
+Greeter.Greet("Ulises");
