@@ -32,5 +32,10 @@ namespace WebAPI.Controllers
             })
             .ToArray();
         }
+        [HttpPost]
+        public ActionResult<int> Post(WeatherForecast pars)
+        {
+            return 1;
+        }
     }
 }

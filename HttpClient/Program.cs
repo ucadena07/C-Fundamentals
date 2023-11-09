@@ -1,5 +1,8 @@
 ﻿using Entities;
+using SomethinElse;
 using System.Net.Http.Json;
+using System.Text;
+using System.Text.Json;
 using static System.Net.WebRequestMethods;
 
 var httpClient = new HttpClient();
@@ -25,11 +28,11 @@ foreach (var header in response.Headers)
 //Example 3: was the request successful
 if (response.IsSuccessStatusCode)
 {
-    Console.WriteLine("Success");
+    //Console.WriteLine("Success");
 }
 else
 {
-    Console.WriteLine("nope");
+    //Console.WriteLine("nope");
 }
 
 //Example 4: specific action depenending on status
@@ -167,3 +170,44 @@ switch (response.StatusCode)
 
 //Example 5: Using GetFromJsonAsync
 var deserializeResp = await httpClient.GetFromJsonAsync<List<WeatherForecast>>(url);
+
+//Example 6: Using PostAsJsonAsync
+var wf = new WeatherForecast()
+{
+    Date = DateOnly.FromDateTime(DateTime.Now),
+    //Summary = "HOT",
+    TemperatureC = 111,
+}; 
+
+var response2 = await httpClient.PostAsJsonAsync(url,wf);
+if (response2.IsSuccessStatusCode)
+{
+    var body2 = await response2.Content.ReadAsStringAsync();
+    //Console.WriteLine(body2);
+}
+
+//Example 7: Using PostAsync
+var serializedObj = JsonSerializer.Serialize(wf);
+var stringContent = new StringContent(serializedObj, Encoding.UTF8,"application/json");
+var response3 = await httpClient.PostAsync(url, stringContent);
+if (response3.IsSuccessStatusCode)
+{
+    var body3 = await response3.Content.ReadAsStringAsync();
+    //Console.WriteLine(body3);
+}
+else
+{
+    var json = await response3.Content.ReadAsStringAsync();
+    var fieldWithErrors = Utils.ExtractErrorsFromWebAPI(json);
+    foreach (var err in fieldWithErrors)
+    {
+        Console.WriteLine($"- {err.Key}");
+        foreach (var item in err.Value)
+        {
+            Console.WriteLine(item);
+        }
+    }
+
+}
+
+
