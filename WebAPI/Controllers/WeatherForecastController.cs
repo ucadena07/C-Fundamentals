@@ -37,5 +37,10 @@ namespace WebAPI.Controllers
         {
             return 1;
         }
+        [HttpGet("uppercase")]
+        public ActionResult<string> GetUpperCase([FromHeader] string customValue = "nigel")
+        {
+            return customValue.ToUpper();
+        }
     }
 }

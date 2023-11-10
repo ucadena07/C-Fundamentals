@@ -1,12 +1,16 @@
 ﻿using Entities;
+using Microsoft.Extensions.DependencyInjection;
 using SomethinElse;
 using System.Net.Http.Json;
+using System.Runtime.CompilerServices;
+using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Text.Json;
 using static System.Net.WebRequestMethods;
 
 var httpClient = new HttpClient();
 var url = "http://localhost:5022/WeatherForecast";
+
 
 //Example 1: Using GetAsync
 var response = await httpClient.GetAsync(url) ;
@@ -175,8 +179,8 @@ var deserializeResp = await httpClient.GetFromJsonAsync<List<WeatherForecast>>(u
 var wf = new WeatherForecast()
 {
     Date = DateOnly.FromDateTime(DateTime.Now),
-    //Summary = "HOT",
-    TemperatureC = 111,
+    Summary = "HOT",
+    TemperatureC = 30,
 }; 
 
 var response2 = await httpClient.PostAsJsonAsync(url,wf);
@@ -211,3 +215,51 @@ else
 }
 
 
+//Example 8: request without sending a value through the header
+//Console.WriteLine(await httpClient.GetStringAsync($"{url}/uppercase"));
+
+//Example 9: request  sending a value through the header
+using(var httpRequest = new HttpRequestMessage(HttpMethod.Get, $"{url}/uppercase"))
+{
+    httpRequest.Headers.Add("customValue", "I am Uli");
+    var response4 = await httpClient.SendAsync(httpRequest); 
+    //Console.WriteLine(await response4.Content.ReadAsStringAsync());
+}
+
+
+//Example 10: always sending a value through the header
+httpClient.DefaultRequestHeaders.Add("customValue", "I am Uli");
+//Console.WriteLine(await httpClient.GetStringAsync($"{url}/uppercase"));
+
+
+//Example 11: Factory
+var serviceCollection = new ServiceCollection();
+Configure(serviceCollection);
+var services = serviceCollection.BuildServiceProvider();    
+var httpClientFactory = services.GetRequiredService<IHttpClientFactory>();
+
+var httpClient2 = httpClientFactory.CreateClient();
+var response5 = await httpClient2.GetAsync($"{url}/uppercase");
+///Console.WriteLine(await response5.Content.ReadAsStringAsync());
+
+
+//Example 12: Named Client
+var weatherForecastClient = httpClientFactory.CreateClient("weather");
+Console.WriteLine( await weatherForecastClient.GetStringAsync("uppercase"));
+
+static void Configure(ServiceCollection services)
+{
+    // Example 1 : Basic usage
+    services.AddHttpClient();
+
+    services.AddHttpClient("weather", opts =>
+    {
+        opts.BaseAddress = new Uri("http://localhost:5022/WeatherForecast/");
+        opts.DefaultRequestHeaders.Add("customValue", "I am named client");
+
+    });
+    services.AddHttpClient("tasks", opts =>
+    {
+        opts.BaseAddress = new Uri("http://localhost:5022/WeatherForecast/todos");
+    });
+}
