@@ -1,6 +1,7 @@
 ﻿using Entities;
 using Microsoft.Extensions.DependencyInjection;
 using SomethinElse;
+using SomethingElse;
 using System.Net.Http.Json;
 using System.Runtime.CompilerServices;
 using System.Security.Authentication.ExtendedProtection;
@@ -244,8 +245,16 @@ var response5 = await httpClient2.GetAsync($"{url}/uppercase");
 
 
 //Example 12: Named Client
-var weatherForecastClient = httpClientFactory.CreateClient("weather");
-Console.WriteLine( await weatherForecastClient.GetStringAsync("uppercase"));
+//var weatherForecastClient = httpClientFactory.CreateClient("weather");
+//Console.WriteLine( await weatherForecastClient.GetStringAsync("uppercase"));
+
+//Example 13: Typed Client
+var weatherForecastClient = services.GetRequiredService<IWeatherForecastClient>();
+var list = await weatherForecastClient.GetAll();
+Console.WriteLine("Done");
+
+
+
 
 static void Configure(ServiceCollection services)
 {
@@ -258,8 +267,12 @@ static void Configure(ServiceCollection services)
         opts.DefaultRequestHeaders.Add("customValue", "I am named client");
 
     });
+    // Example 2 : Named Clients
     services.AddHttpClient("tasks", opts =>
     {
-        opts.BaseAddress = new Uri("http://localhost:5022/WeatherForecast/todos");
+        opts.BaseAddress = new Uri("http://localhost:5022/WeatherForecast/todos/");
     });
+
+    //Example: 3 Type CLient
+    services.AddHttpClient<IWeatherForecastClient, WeatherForecastClient>();
 }
